@@ -78,7 +78,7 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
 .color-elements{color:#E96840;}
 .custom-menu li{font-size: 12px;padding:0px 0px;}
 .btn-custom, .btn-custom:active,.btn-custom:focus, .btn-custom:hover{background-color:#E96840;border-color:#E96840}
-#bienvenidos {padding: 80px 0px 40px 0px; color:#372f2d/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
+#sobreNosotros {padding: 80px 0px 40px 0px; color:#372f2d/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
 #products {padding-top:80px;}
 #contactos {padding-top:80px;}
 #location {padding-top:50px;}
@@ -333,7 +333,7 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; }
 .modal-content { margin: 0 auto;  max-width: 80%;  max-height: 80%; }
 /*.nav li a { text-transform: uppercase; }*/
-#bienvenidos h2, #cabanas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
+#sobreNosotros h2, #cabanas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
 @media screen and (max-width: 768px) {
 .navbar-inverse .navbar-nav li { margin-right:5px; margin-left:5px;}
 .team-img img { margin-left:auto; margin-right:auto; width:90%; }
@@ -452,7 +452,7 @@ header.carousel {
 .h2, h2 {
     font-size: 20px;
 }
-#bienvenidos {
+#sobreNosotros {
     padding: 30px 0px 0 0px;
 }
 #bloghome {
@@ -560,19 +560,18 @@ p.m_5 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.7em ;
 	font-weight:bold;
-
-	color: #1E5267;
+	color: #000;
 }
 p.m_2 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	line-height : 1.6;
-	color: #1E5267;
+	color: #000;
 	font-size: 1.3em;
 }
 p.m_3 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	line-height : 1.6;
-	color: #1E5267;
+	color: #000;
 	font-size: 1.6em;
 }
 p.m_6 {
@@ -580,12 +579,12 @@ p.m_6 {
 	font-weight: bold;
 	font-size: 1.3em ;
 	line-height : 1.6;
-	color: #1E5267;
+	color: #000;
 }
 
 .cabañas {
 	line-height : 1.6;
-	color: #1E5267;
+	color: #000;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
