@@ -47,25 +47,25 @@
 		<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 		<script>
 		
-		var map;
+		var mapa;
 		
 		function initialize() {
 			
-			var mapCanvas = document.getElementById('map');
+			var mapCanvas = document.getElementById('mapa');
 			
-			var myLatlng = new google.maps.LatLng(-34.623,-58.729);
+			var myLatlng = new google.maps.LatLng(-34.6269781,-58.4970696);
 			var mapOptions = {
 				center: myLatlng,
 				zoom: 14,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
-			var map = new google.maps.Map(mapCanvas , mapOptions);
+			var mapa = new google.maps.Map(mapCanvas , mapOptions);
 			
 			
 			 var contentString =  '<div style="margin-top:5px">'+
 								  '<img src="images/mifavicon2.ico" ' +
 								  'style="display:inline; width:25px;height:25px; margin-right:10px"></img>' + 
-								  '<p style="color:black; display:inline">La Morena. Cabañas Boutique</p>'+
+								  '<p style="color:black; display:inline">Maniquies Argentina</p>'+
 								  '</div>';
 			
 			var infowindow = new google.maps.InfoWindow({
@@ -76,16 +76,14 @@
 				position: myLatlng
 				});
 			
-			marker.setMap(map);
+			marker.setMap(mapa);
 			
 			marker.addListener('click', function() {
-				infowindow.open(map, marker);
+				infowindow.open(mapa, marker);
 			});
 			
-			infowindow.open(map, marker);
+			infowindow.open(mapa, marker);
 		}
-			
-			/*google.maps.event.addDomListener(window, 'load', initialize);*/
 
 		function loadScript() {
 		  var script = document.createElement("script");
@@ -361,13 +359,6 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 				</div>
 				<div>
 					<div class="row">
-						<div class="col-md-6 video_frame">
-							<div class="google-maps" >
-									<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15617.938382869406!2d-58.70974897595968!3d-34.6226899099055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe248ebd8e99%3A0x447894924d8d08b!2sMendoza+5902%2C+B1736DTD+Trujui%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1452366049176" 
-									width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-							
-							 <div id="map"></div></div>
-						</div>
 						<div class="col-md-6">
 							<div>
 								<p class="ubicacion">Rodeados de los mejores haras y escuelas de equitaci&oacuten. </br>
@@ -408,7 +399,7 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 				<div class="row">
 					<div class="col-md-12">
 						<div class="col-lg-12">
-							<div class="text-center color-elements cabañas1">
+							<div class="text-center color-elements cabañas">
 							<br>
 							<h2>Contacto</h2>
 							</div>
@@ -437,8 +428,6 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 									<div class="col-sm-12 height-contact-element">
 										<div class="form-group">
 											<textarea class="form-control custom-labels" name="Mensaje" placeholder="Mensaje" required data-validation-required-message="Por favor escriba un mensaje!"></textarea>
-											<!--input type="text" name="Mensaje" class="form-control custom-labels" id="message" placeholder="Mensaje (Por favor indicar la cantidad de personas a alojarse y la fecha deseada)" required data-validation-required-message="Por favor escriba un mensaje!"/>
-											-->
 										</div>
 									</div>
 									<div id="success" style="float: right;"> </div>
@@ -503,6 +492,14 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-12 video_frame">
+							<div class="google-maps" >
+									<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15617.938382869406!2d-58.70974897595968!3d-34.6226899099055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe248ebd8e99%3A0x447894924d8d08b!2sMendoza+5902%2C+B1736DTD+Trujui%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1452366049176" 
+									width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+							
+							 <div id="mapa"></div></div>
+						</div>
 				</div>
 			</div>
 
