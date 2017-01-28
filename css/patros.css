@@ -205,12 +205,12 @@ img.displayed{display: block;margin-left: auto;margin-right: auto;background-col
 .homeservices1 { padding-top:40px; margin-bottom:40px; }
 .homeservices1 a { color:#FFF; }
 .homeservices1 a:hover { color:#FFF; text-decoration: none; }
-#cabanas{ padding-top:60px; }
-#cabanas p{ color:#FFF;font-size: 1.1em;
+#productos{ padding-top:60px; }
+#productos p{ color:#FFF;font-size: 1.1em;
     line-height: 1.6;}
-#cabanas img { -webkit-filter: grayscale(1); filter: grayscale(1); }
-#cabanas img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); -webkit-transition:0.5s;transition: 0.5s; transition-timing-function: ease; }
-#cabanas h2 { color:#FFF; }
+#productos img { -webkit-filter: grayscale(1); filter: grayscale(1); }
+#productos img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); -webkit-transition:0.5s;transition: 0.5s; transition-timing-function: ease; }
+#productos h2 { color:#FFF; }
 .centerim{ text-align:center; font-size:40px; margin: 10px auto; color:#b9b9b9;}
 .centerim:hover{ color:#2D2D2D;}
 .fa-lg { font-size:70px; min-height:150px; }
@@ -323,7 +323,7 @@ figure.effect-oscar:hover img {	opacity: 0.4; }
 #contactpage .form-control { color:#3d3d3d; }
 #contactpage h2 { margin:40px 0; }
 #page1 {padding: 80px 0px 40px 0px;}
-#fotos {padding-top:80px; margin-bottom: 80px; clear:both; display: block; }
+#clientes {padding-top:80px; margin-bottom: 80px; clear:both; display: block; }
 #ubicacion { padding-top:80px;}
 #ubicacion ul {text-align: center;}
 #ubicacion li{ display: inline-block; margin-right:24px; font-size:18px; }
@@ -348,7 +348,7 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; }
 .modal-content { margin: 0 auto;  max-width: 80%;  max-height: 80%; }
 /*.nav li a { text-transform: uppercase; }*/
-#sobreNosotros h2, #cabanas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contacto h2, #inicio h3 { text-transform: uppercase; }
+#sobreNosotros h2, #productos h2, #bloghome h2, #ubicacion h2, #clientes h2, #contacto h2, #inicio h3 { text-transform: uppercase; }
 @media screen and (max-width: 768px) {
 .navbar-inverse .navbar-nav li { margin-right:5px; margin-left:5px;}
 .team-img img { margin-left:auto; margin-right:auto; width:90%; }
@@ -474,7 +474,7 @@ header.carousel {
     padding-top:20px;
     padding-bottom: 0;
 }
-#fotos {
+#clientes {
     padding-top: 10px;
     margin-bottom: 0;
 }    
@@ -500,7 +500,7 @@ ul.cb-slideshow h4{
 /*#about p {
     font-size: 13px;
 }*/
-#cabanas {
+#productos {
     padding-top: 15px;
 }
 .list-social-icons li {

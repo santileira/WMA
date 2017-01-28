@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link rel="shortcut icon" type="image/x-icon" href="images/mifavicon2.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="images/mifavicon.ico">
 		<title>Maniquies Argentina</title>
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -63,7 +63,7 @@
 			
 			
 			 var contentString =  '<div style="margin-top:5px">'+
-								  '<img src="images/mifavicon2.ico" ' +
+								  '<img src="images/mifavicon.ico" ' +
 								  'style="display:inline; width:25px;height:25px; margin-right:10px"></img>' + 
 								  '<p style="color:black; display:inline">Maniquies Argentina</p>'+
 								  '</div>';
@@ -165,9 +165,9 @@
 					<ul class="nav navbar-nav navbar-right custom-menu menuPrincipal">
 						<li class="active"><a href="#inicio">Inicio</a></li>
 						<li><a href="#sobreNosotros">Sobre Nosotros</a></li>
-						<li><a href="#cabanas">Productos</a></li>
-						<!--<li id="botonMenuFoto"><a href="#fotos">Fotos</a></li>-->
-						<li><a href="#ubicacion">Clientes</a></li>
+						<li><a href="#productos">Productos</a></li>
+						<li id="botonMenuClientes"><a href="#clientes">Clientes</a></li>
+						<!--<li><a href="#ubicacion">Clientes</a></li>-->
 						<li><a href="#contacto">Contacto</a></li>
 					</ul>
 				</div>
@@ -207,9 +207,9 @@
 								<div class="col-md-12">
 									<p class="m_6" >Maniquies Argentina inicia su camino en el año 2011, con la innovacion de productos desconocidos en el mercado, ofreciendo a los clientes una variante distinta a lo que se utiliza usualmente. </p>
 									<p class="m_6">
-Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta. A unas cuadras de la zona comercial de avellaneda.
-<br> 
-								Nos dedicamos principalmente a la fabricación de Pecheras, maniquies, bustos, percheros y accesorios para negocios, shoppings, presentaciones y eventos, ya que posee un excelente servicio de envíos a todo el interior del pais.
+									Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta. A unas cuadras de la zona comercial de avellaneda.
+									<br> 
+									Nos dedicamos principalmente a la fabricación de Pecheras, maniquies, bustos, percheros y accesorios para negocios, shoppings, presentaciones y eventos, ya que posee un excelente servicio de envíos a todo el interior del pais.
 									</p>
 									<p class="m_6">Nuestro objetivo: Buscamos incrementar dia tras dia, la produccion de nuestros productos exclusivos. Para asi redistibuirlo por todo el pais y lograr la confianza de el cliente, que reciba su producto en tiempo y forma, y asi ofrecer un servicio impecable
 
@@ -221,7 +221,7 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 			</div>
 		</section>
 
-		<section id="cabanas">
+		<section id="productos">
 			<div class="orangeback">
 				<div class="container">
 					<div class="text-center homeport2 cabañas1"><br><h2>Caracter&iacutesticas </h2></div>
@@ -282,21 +282,14 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 		</section>
 	
 
-		<section id="fotos">
+		<section id="clientes">
 		<div class="container">
 		<div class="row">
 			<div class="text-center cabañas">
 			<br><br>
-			<h2>Fotos</h2>
+			<h2>Clientes</h2>
 			<img class="img-responsive displayed" src="images/short.png" alt="about">
 			</div>
-
-			<ul class="filter nav nav-pills">
-			  <li data-value="all" ><a class="active botonesFoto" href="#">Todas</a></li>
-			  <li data-value="development"><a class="botonesFoto" href="#">Caba&ntildeas</a></li>
-			  <li data-value="webdesign"><a href="#" class="botonesFoto">Jard&iacuten</a></li>
-			  <li data-value="mobileapps"><a href="#" class="botonesFoto">Entretenimiento</a></li>
-			</ul>
  
 			<ul class="port2">
 			  <li data-type="development" data-id="id-1" class="port3">
@@ -350,7 +343,7 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 		</div>
 		</section>
 		
-		<section id="ubicacion">
+		<!--<section id="ubicacion">
 			<div class="container">
 				<div class="text-center cabañas">
 				<br><br>
@@ -385,14 +378,7 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 					
 				</div>
 			</div>
-		</section>
-
-
-		<div id="location">
-			<div class="container">
-				
-			</div>
-		</div>
+		</section>-->
 
 		<section id="contacto">
 			<div class="container"> 
@@ -546,7 +532,7 @@ Nuestro showroom, al igual que la fabrica esta ubicado en el barrio de floresta.
 				});
 				
 				$(".botonesFoto").on("click", function(){
-					document.getElementById('botonMenuFoto').classList.add('active')
+					document.getElementById('botonMenuClientes').classList.add('active')
 				});
 				
 				$(".menuPrincipal li a").on("click", function(){
