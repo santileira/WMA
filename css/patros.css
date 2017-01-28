@@ -331,7 +331,10 @@ figure.effect-oscar:hover img {	opacity: 0.4; }
 #ubicacion  .team-img img { filter: grayscale(1); -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -o-filter: grayscale(1); -ms-filter: grayscale(1); -webkit-transition:0.8s; transition: 0.8s; }
 #ubicacion  .team-img img:hover { filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); -ms-filter: grayscale(0); -webkit-transition:0.8s; transition: 0.8s; cursor: pointer; }
  /*portfolio*/
-.port2 { margin:0px;  padding:0px;  max-width: 100%; }
+.port2 { margin:18.20px 0px 0px;
+    padding:0px;  
+    max-width: 100%; 
+}
 .port3 { width: 33%; min-width: 240px; display: inline-block; margin:0px 0px 7px 0px;  padding:0px; }
 .port3 img { width: 99%; min-width: 240px; max-width:380px; cursor: pointer;}
 .port3 img:hover { filter: brightness(70%) !important;  -webkit-filter: brightness(70%); -moz-filter: brightness(70%); -o-filter: brightness(70%); -ms-filter: brightness(70%);-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
