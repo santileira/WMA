@@ -731,24 +731,41 @@ background-image: url(../images/logo1-.png);
     padding: 0px 45px !important;
 }
 
-ul.menuPrincipal ul {
+ul.menuPrincipal ul#menuDesplegable {
 	display: none;
 	position: absolute;
+	width: 100%;
 }
 
-ul.menuPrincipal ul li {
+ul.menuPrincipal ul#menuDesplegable li {
 	display: block !important;
 	position:relative;
 	background-color: #dff5ff;
 	opacity: 1;
 }
 
-ul.menuPrincipal li:hover ul{
+ul.menuPrincipal li:hover ul#menuDesplegable{
 	display: block;
 }
+@media screen and (min-width: 805px){
+	ul#menuDesplegable{
+		padding-top: 12px;
+		padding-left: 0px;
+	}
+}
+@media screen and (min-width:768px) and (max-width: 804px){
+	ul#menuDesplegable{
+		padding-top: 5px;
+		padding-left: 0px !important;
+	}
+}
 
-ul#menuDesplegable{
-	padding-left: 0px;
+@media screen and (max-width:767px){
+	ul.menuPrincipal li:hover ul#menuDesplegable{
+		display: none;
+		
+	}
+	
 }
 
 ul#menuDesplegable>li>a {
@@ -762,6 +779,7 @@ ul#menuDesplegable>li>a {
 ul#menuDesplegable li{
 	margin-left: 0px !important;
 	padding-left: 10px !important;
+	padding-bottom: 5px;
 	
 }
 
@@ -772,5 +790,7 @@ ul#menuDesplegable>li>a:hover,#menuDesplegable>li>a:focus {
     transition-timing-function: ease;
     border-bottom:0px;
 }
+
+
 
 	

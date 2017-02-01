@@ -93,6 +93,10 @@
 		}   
 		window.onload = loadScript;
 		
+		$(".subMenu").click(function(){
+			$(this).find("ul").slideToggle('slow');
+		})
+
 		</script>
 		<!--
 		<script>
@@ -165,12 +169,12 @@
 					<ul class="nav navbar-nav navbar-right custom-menu menuPrincipal">
 						<li class="active"><a href="#inicio">Inicio</a></li>
 						<li><a href="#sobreNosotros">Sobre Nosotros</a></li>
-						<li><a>Productos</a>
+						<li class="subMenu"><a>Productos <i class="fa fa-caret-down"></i></a>
 							<ul id="menuDesplegable">
 								<li><a href="#">Niños</a>
 								<li><a href="#">Pecheras</a>
 								<li><a href="#">Bustos</a>
-								<li><a href="#">Cuerpo Entero</a>
+								<li><a href="#">Cuerpo</a>
 								<li><a href="#">Colgantes</a>
 								<li><a href="#">Percheros</a>
 								<li><a href="#">Accesorios</a>	
@@ -356,7 +360,7 @@
 			  	  	  <li data-type="development" data-id="id-1" class="port3">
 				<a id="development1" href="images/clientes/popup18.jpg" data-lightbox="imagenes" ><img class="tamañoImagen" src="images/clientes/port18.jpg" alt=""></a>
 			  </li>
-			  	  	  <li data-type="development" data-id="id-1" class="port3">
+			  <!--	  	  <li data-type="development" data-id="id-1" class="port3">
 				<a id="development1" href="images/clientes/popup19.jpg" data-lightbox="imagenes" ><img class="tamañoImagen" src="images/clientes/port19.jpg" alt=""></a>
 			  </li>
 			  	  	  <li data-type="development" data-id="id-1" class="port3">
@@ -403,7 +407,7 @@
 			  </li>
 			   	  	  <li data-type="development" data-id="id-1" class="port3">
 				<a id="development1" href="images/clientes/popup34.jpg" data-lightbox="imagenes" ><img class="tamañoImagen" src="images/clientes/port34.jpg" alt=""></a>
-			  </li>
+			  </li>-->
 
 			</ul>
 		  </div> 
