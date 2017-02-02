@@ -93,9 +93,12 @@
 		}   
 		window.onload = loadScript;
 		
-		$(".subMenu").click(function(){
+		var subMenu = document.getElementsByClassName("subMenu");
+		subMenu.onclick =function(){
+			debugger;
 			$(this).find("ul").slideToggle('slow');
-		})
+		}
+		
 
 		</script>
 		<!--
