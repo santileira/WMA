@@ -18,6 +18,11 @@
 		<link href="css/lightbox.min.css" rel="stylesheet">
 		
 		<link href="https://fonts.googleapis.com/css?family=Pacifico|Poiret+One" rel="stylesheet">
+		
+		
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -92,13 +97,7 @@
 		  document.body.appendChild(script); 
 		}   
 		window.onload = loadScript;
-		
-		var subMenu = document.getElementsByClassName("subMenu");
-		subMenu.onclick =function(){
-			debugger;
-			$(this).find("ul").slideToggle('slow');
-		}
-		
+
 
 		</script>
 		<!--
@@ -172,15 +171,15 @@
 					<ul class="nav navbar-nav navbar-right custom-menu menuPrincipal">
 						<li class="active"><a href="#inicio">Inicio</a></li>
 						<li><a href="#sobreNosotros">Sobre Nosotros</a></li>
-						<li class="subMenu"><a>Productos <i class="fa fa-caret-down"></i></a>
+						<li class="subMenu"><a id="subMenu">Productos <i class="fa fa-caret-down"></i></a>
 							<ul id="menuDesplegable">
-								<li><a href="#">Niños</a>
-								<li><a href="#">Pecheras</a>
-								<li><a href="#">Bustos</a>
-								<li><a href="#">Cuerpo</a>
-								<li><a href="#">Colgantes</a>
-								<li><a href="#">Percheros</a>
-								<li><a href="#">Accesorios</a>	
+								<li><a href="">Niños</a>
+								<li><a href="">Pecheras</a>
+								<li><a href="">Bustos</a>
+								<li><a href="">Cuerpo</a>
+								<li><a href="">Colgantes</a>
+								<li><a href="">Percheros</a>
+								<li><a href="">Accesorios</a>	
 							</ul>
 						</li>
 						<li id="botonMenuClientes"><a href="#clientes">Clientes</a></li>
@@ -563,8 +562,6 @@
 				</div>
 			</div>
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 
@@ -609,13 +606,19 @@
 					document.getElementById('botonMenuClientes').classList.add('active')
 				});
 				
+				function ocultarMenu(){
+						var menu = document.getElementById('bs-example-navbar-collapse-1');
+						menu.setAttribute("style", "height: 0px;");
+						menu.setAttribute("aria-expanded", "false");
+						menu.setAttribute("class","collapse navbar-collapse");
+				
+				}
 				$(".menuPrincipal li a").on("click", function(){
-					var menu = document.getElementById('bs-example-navbar-collapse-1');
-					menu.setAttribute("style", "height: 0px;");
-					menu.setAttribute("aria-expanded", "false");
-					menu.setAttribute("class","collapse navbar-collapse");
+					if(!$(this).parents('li').hasClass('subMenu'))
+						ocultarMenu();
 				});
-
+				
+				$("li.subMenu li a").on("click", ocultarMenu);
 
 				$('body').append('<div id="toTop" class="btn btn-primary color1"><span class="glyphicon glyphicon-chevron-up"></span></div>');
 					$(window).scroll(function () {
@@ -708,6 +711,13 @@
 					}
 					return false;
 				});
+				
+				
+						
+				$('.subMenu').click(function(){
+					$(this).find("ul").slideToggle();
+				});
+		
 			});
 		
 
