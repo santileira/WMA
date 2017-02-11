@@ -7,6 +7,7 @@ $contenido .= "Email: ".$_POST["Email"]."\n";
 $contenido .= "Telefono: ".$_POST["Telefono"]."\n";
 $contenido .= "Contenido: ".$_POST["Mensaje"]."\n\n";
 $header = "From: no-reply@webcabaniaslamorena.com.ar\n";
+$header .= "Reply-To: ". $_POST["Email"]."\n";
 $header .= "Mime-Version: 1.0\n";
 $header .= "Content-Type: text/plain";
 if(mail($to, $subject, $contenido ,$header)){
