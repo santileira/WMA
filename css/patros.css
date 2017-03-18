@@ -2,7 +2,6 @@
 
 
 .cb-slideshow, .cb-slideshow:after { position:absolute; width:100%; height:100%; top: 0px; left: 0px; z-index: 0; background-color:#131313;}
-
 .cb-slideshow li span { background-position: center; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background-size: cover;
     background-repeat: none; opacity: 0; z-index: 0; -webkit-backface-visibility: hidden; -webkit-animation: imageAnimation 18s linear infinite 0s;
     -moz-animation: imageAnimation 18s linear infinite 0s; -o-animation: imageAnimation 18s linear infinite 0s; -ms-animation: imageAnimation 18s linear infinite 0s;
@@ -61,7 +60,7 @@ a:focus,a:hover{color:#1E5267;}*/
 header.carousel { height: 100%; max-height: 650px; }
 header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner { height: 100%; }
 header.carousel .fill2 { width: 100%; height: 100%; background-position: center; background-size: cover; background-color: #1B2D2D; }
-header.carousel .fill { width: 100%; height: 100%; background-position: center; background-size: cover; background-color:#E96840; }
+header.carousel .fill { width: 100%; height: 100%; background-position: center; background-size: cover; background-color:#000; }
 .error-404 { font-size: 100px; }
 .price { display: block; font-size: 50px; line-height: 50px;}
 .price sup { top: -20px; left: 2px; font-size: 20px; }
@@ -75,9 +74,9 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
 .custom-labels{background-color:transparent;border-radius:0px; border: 1px solid black;	font-family: 'Open Sans Condensed', sans-serif; }
 .btn-noborder-radius{border-radius:0px;}
 .menu-border-bottom{background-color:transparent;border-bottom:2px solid white;}
-.color-elements{color:#E96840;}
+.color-elements{color:#000;}
 .custom-menu li{font-size: 12px;padding:0px 0px;}
-.btn-custom, .btn-custom:active,.btn-custom:focus, .btn-custom:hover{background-color:#E96840;border-color:#E96840}
+.btn-custom, .btn-custom:active,.btn-custom:focus, .btn-custom:hover{background-color:#000;border-color:#000}
 #sobreNosotros {padding: 80px 0px 40px 0px; color:#372f2d/*background-image:url("../imagenes/background.jpg");background-repeat:repeat;*/}
 #products {padding-top:80px;}
 #location {padding-top:50px;}
@@ -112,20 +111,20 @@ span.text {
 .social-icons{color:#313131;font-size:24px; padding:0;}
 .list-social-icons {display: inline-block; vertical-align: middle;}
 .list-social-icons li {margin: 0px 15px;width: 40px;height: 40px;text-align: center;line-height: 40px;border-radius: 50%;-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease;}
-.list-social-icons li:hover {background:#E96840;}
+.list-social-icons li:hover {background:#000;}
 .list-social-icons li:hover .social-icons {color:#f7f7f7;}
-.list-social-icons li:active .social-icons {background:#E96840;}
+.list-social-icons li:active .social-icons {background:#000;}
 .blog{padding-top:100px;}
 .pagination {
     margin: 20px 0 50px !important;
 }    
 .sidebar-padding{padding-top: 20px;}
 .blog-title{margin-top: 0;}
-.blog-title a{color:#E96840; -webkit-transition: all .3s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+.blog-title a{color:#000; -webkit-transition: all .3s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
 .blog-title a:hover{color:#555;text-decoration: none;}
 .sidebar-title{color:#555;}
-.pagination>li>a{color:#E96840;}
-.pagination>.active>a{background-color: #E96840;border-color:#E96840; color:white;}
+.pagination>li>a{color:#000;}
+.pagination>.active>a{background-color: #E96840;border-color:#000; color:white;}
 .pagination>li>a:hover {color:#313131;}
 .blog-thumb{width:100%;position: relative;display:block;}
 .blog-thumb a{position: relative; display:block;}
@@ -477,7 +476,7 @@ header.carousel {
     padding-bottom: 5px;
 }  
 .h2, h2 {
-    font-size: 20px;
+    font-size: 40px;
 }
 #sobreNosotros {
     padding: 30px 0px 0 0px;
@@ -929,9 +928,10 @@ ul#menuDesplegable>li>a:hover,#menuDesplegable>li>a:focus {
 }
 
 .personalizacionTitulo h2{
-    font-size:50px !important;
+    font-size:40px !important;
     font-family: 'Great Vibes' , cursive !important;    
     text-transform: none !important;
+    padding-left: 20px;
 }
 
 .personalizacionElemento h2{

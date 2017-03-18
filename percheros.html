@@ -15,52 +15,13 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/patros.css" >
 		<!-- Lightbox -->
-		<link href="css/lightbox.css" rel="stylesheet">
-		
+		<link href="css/lightbox.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico|Poiret+One|Great+Vibes" rel="stylesheet">
-		
 		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
+		<script src="js/jquery.min.js"></script>
 	</head>
 
 	<body data-spy="scroll">
-	
-								<!-- Google Code for seguimiento de envio de e-mail Conversion Page
-				In your html page, add the snippet and call
-				goog_report_conversion when someone clicks on the
-				chosen link or button. -->
-				<script type="text/javascript">
-				  /* <![CDATA[ */
-				  goog_snippet_vars = function() {
-					var w = window;
-					w.google_conversion_id = 966544375;
-					w.google_conversion_label = "PazCCKD-n2QQ95fxzAM";
-					w.google_remarketing_only = false;
-				  }
-				  // DO NOT CHANGE THE CODE BELOW.
-				  goog_report_conversion = function(url) {
-					goog_snippet_vars();
-					window.google_conversion_format = "3";
-					var opt = new Object();
-					opt.onload_callback = function() {
-					if (typeof(url) != 'undefined') {
-					  window.location = url;
-					}
-				  }
-				  var conv_handler = window['google_trackConversion'];
-				  if (typeof(conv_handler) == 'function') {
-					conv_handler(opt);
-				  }
-				}
-				/* ]]> */
-				</script>
-			<!--	<script async type="text/javascript"
-				  src="//www.googleadservices.com/pagead/conversion_async.js">
-				</script>
-			-->
-
-
-	
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -192,12 +153,7 @@
 		
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
-
-		<!-- Google Map -->
-		<!-- <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places"></script> -->
-
-		<!-- Portfolio -->
-		<script src="js/jquery.quicksand.js"></script>	    
+		<script src="js/jquery.quicksand.min.js"></script>	    
 
 		<script>
 		function gallery(){};
@@ -220,11 +176,15 @@
 		$(document).ready(gallery);
 		</script>
 
-
-
-<script src="js/lightbox.js">
-
-</script>
+		<script>
+			$(document).ready(function(){		
+					$('.subMenu').click(function(){
+						$(this).find("ul").slideToggle();
+					});
+			
+			});
+		</script>
+		<script src="js/lightbox.min.js"></script>
 
 </body>
 </html>
